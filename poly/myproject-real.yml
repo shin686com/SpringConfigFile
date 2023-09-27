@@ -1,0 +1,21 @@
+server:
+  port: 12000
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      enabled: true
+      show-details: always
+    beans:
+      enabled: true
+    info:
+      enabled: true
+  server:
+    address: localhost
+    port: 12001
+
+poly: 'BigData Real!'
